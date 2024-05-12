@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reddit Sans' rel='stylesheet'">
+    <title>Login Portal</title>
+    
+</head>
+<body>
+    <div class="login-box">
+        <div class="heading-login"><h1 class="ExpressParcel">ExpressParcel</h1></div>
+        <form onsubmit="return validateForm()">
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="password"  required="">
+            <label>Password</label>
+          </div><center>
+          <a href="#">
+                 SEND
+             <span></span>
+          </a></center>
+        </form>
+      </div>
+      <script>
+        function validateForm() {
+            const password = document.getElementById("password").value;
+
+            if (password.length > 30) {
+                alert("Password must be less than or equal to 30 characters.");
+                return false;
+            }
+            if (!/[A-Z]/.test(password)) {
+                alert("Password must contain at least one uppercase letter.");
+                return false;
+            }
+            if (!/[a-z]/.test(password)) {
+                alert("Password must contain at least one lowercase letter.");
+                return false;
+            }
+            if (!/[^A-Za-z0-9]/.test(password)) {
+                alert("Password must contain at least one special character.");
+                return false;
+            }
+
+            return true;
+        }
+
+      </script>
+      
+</body>
+</html>
