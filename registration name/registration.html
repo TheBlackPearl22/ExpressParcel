@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="registration.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registrationForm" onsubmit="return submitForm()">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="customerName">Customer Name:</label>
+            <div class="form-control">
+                <input class="input input-alt" placeholder="Name" required="" type="text">
+                <span class="input-border input-border-alt"></span>
+              </div>
+             <br>
+            <label for="email">Email:</label>
+            <div class="form-control">
+                <input class="input input-alt" placeholder="Email" required="" type="text">
+                <span class="input-border input-border-alt"></span>
+              </div><br>
+             
+              <div class="ui-wrapper">
+                <input checked="" id="Austria" name="flag" type="radio">
+                <input id="Belgium" name="flag" type="radio">
+                <input id="Bulgaria" name="flag" type="radio">
+                <input id="Croatia" name="flag" type="radio">
+                <input id="Cyprus" name="flag" type="radio">
+                <input id="Czech" name="flag" type="radio">
+                <input id="Denmark" name="flag" type="radio">
+                <input id="Estonia" name="flag" type="radio">
+                <input id="Finland" name="flag" type="radio">
+                <input id="France" name="flag" type="radio">
+                <input id="Germany" name="flag" type="radio">
+                <input id="Greece" name="flag" type="radio">
+                <input id="Hungary" name="flag" type="radio">
+                <input id="Iceland" name="flag" type="radio">
+                <input id="Ireland" name="flag" type="radio">
+                <input id="Italy" name="flag" type="radio">
+                <input id="Latvia" name="flag" type="radio">
+                <input id="Liechtenstein" name="flag" type="radio">
+                <input id="Lithuania" name="flag" type="radio">
+                <input id="Luxembourg" name="flag" type="radio">
+                <input id="Malta" name="flag" type="radio">
+                <input id="Netherlands" name="flag" type="radio">
+                <input id="Norway" name="flag" type="radio">
+                <input id="Poland" name="flag" type="radio">
+                <input id="Portugal" name="flag" type="radio">
+                <input id="Romania" name="flag" type="radio">
+                <input id="Slovakia" name="flag" type="radio">
+                <input id="Slovenia" name="flag" type="radio">
+                <input id="Spain" name="flag" type="radio">
+                <input id="Sweden" name="flag" type="radio">
+                <input class="dropdown-checkbox" name="dropdown" id="dropdown" type="checkbox">
+                <label class="dropdown-container" for="dropdown"></label>
+                <div class="input-wrapper">
+                    <legend>
+                      <label for="phonenumber">
+                        Phonenumber*
+                      </label>
+                    </legend>
+                    <div class="textfield">
+                        <input pattern="\d+" maxlength="11" id="phonenumber" type="text">
+                        <span class="invalid-msg">This is not a valid phone number</span>
+                    </div>
+                </div>
+                <div class="select-wrapper">
+                    <ul>
+                        <li class="Austria"><label for="Austria"><span>🇦🇹</span>Austria (+43)</label></li>
+                        <li class="Belgium"><label for="Belgium"><span>🇧🇪</span>Belgium (+32)</label></li>
+                        <li class="Bulgaria"><label for="Bulgaria"><span>🇧🇬</span>Bulgaria (+359)</label></li>
+                        <li class="Croatia"><label for="Croatia"><span>🇭🇷</span>Croatia (+385)</label></li>
+                        <li class="Cyprus"><label for="Cyprus"><span>🇨🇾</span>Cyprus (+357)</label></li>
+                        <li class="Czech"><label for="Czech"><span>🇨🇿</span>Czech Republic (+420)</label></li>
+                        <li class="Denmark"><label for="Denmark"><span>🇩🇰</span>Denmark (+45)</label></li>
+                        <li class="Estonia"><label for="Estonia"><span>🇪🇪</span>Estonia (+372)</label></li>
+                        <li class="Finland"><label for="Finland"><span>🇫🇮</span>Finland (+358)</label></li>
+                        <li class="France"><label for="France"><span>🇫🇷</span>France (+33)</label></li>
+                        <li class="Germany"><label for="Germany"><span>🇩🇪</span>Germany (+49)</label></li>
+                        <li class="Greece"><label for="Greece"><span>🇬🇷</span>Greece (+30)</label></li>
+                        <li class="Hungary"><label for="Hungary"><span>🇭🇺</span>Hungary (+36)</label></li>
+                        <li class="Iceland"><label for="Iceland"><span>🇮🇸</span>Iceland (+354)</label></li>
+                        <li class="India"><label for="India"><span>IN</span>India (+91)</label></li>
+                        <li class="Ireland"><label for="Ireland"><span>🇮🇪</span>Republic of Ireland (+353)</label></li>
+                        <li class="Italy"><label for="Italy"><span>🇮🇹</span>Italy (+39)</label></li>
+                        <li class="Latvia"><label for="Latvia"><span>🇱🇻</span>Latvia (+371)</label></li>
+                        <li class="Liechtenstein"><label for="Liechtenstein"><span>🇱🇮</span>Liechtenstein (+423)</label></li>
+                        <li class="Lithuania"><label for="Lithuania"><span>🇱🇹</span>Lithuania (+370)</label></li>
+                        <li class="Luxembourg"><label for="Luxembourg"><span>🇱🇺</span>Luxembourg (+352)</label></li>
+                        <li class="Malta"><label for="Malta"><span>🇲🇹</span>Malta (+356)</label></li>
+                        <li class="Netherlands"><label for="Netherlands"><span>🇳🇱</span>Netherlands (+31)</label></li>
+                        <li class="Norway"><label for="Norway"><span>🇳🇴</span>Norway (+47)</label></li>
+                        <li class="Poland"><label for="Poland"><span>🇵🇱</span>Poland (+48)</label></li>
+                        <li class="Portugal"><label for="Portugal"><span>🇵🇹</span>Portugal (+351)</label></li>
+                        <li class="Romania"><label for="Romania"><span>🇷🇴</span>Romania (+40)</label></li>
+                        <li class="Slovakia"><label for="Slovakia"><span>🇸🇰</span>Slovakia (+421)</label></li>
+                        <li class="Slovenia"><label for="Slovenia"><span>🇸🇮</span>Slovenia (+386)</label></li>
+                        <li class="Spain"><label for="Spain"><span>🇪🇸</span>Spain (+34)</label></li>
+                        <li class="Sweden"><label for="Sweden"><span>🇸🇪</span>Sweden (+46)</label></li>
+                    </ul>
+                </div>
+            </div>
+             <br>
+             
+            <div class="form-control">
+                <input class="input input-alt" placeholder="Address" required="" type="text">
+                <textarea class="input input-alt" rows="4" required></textarea>
+                <span class="input-border input-border-alt"></span>
+              </div>
+              <br>
+        </fieldset>
+        <fieldset>
+            <legend>Username and Password</legend>
+            <label for="userId">User ID:</label>
+            <div class="form-control">
+                <input class="input input-alt" placeholder="User ID" required="" type="text">
+                <span class="input-border input-border-alt"></span>
+              </div>
+              
+            <br>
+            <label for="password">Password:</label>
+            <div class="form-control">
+                <input class="input input-alt" placeholder="Password" required="" type="text">
+                <span class="input-border input-border-alt"></span>
+              </div>
+              <br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <div class="form-control">
+                <input class="input input-alt" placeholder="Confirm Password" required="" type="text">
+                <span class="input-border input-border-alt"></span>
+              </div>
+              
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="preferences">Preferences:</label>
+            <div class="form-control">
+                <input class="input input-alt" placeholder="Preferences" required="" type="text">
+                <textarea class="input input-alt" rows="4" required></textarea>
+                <span class="input-border input-border-alt"></span>
+              </div>
+            <br>
+        </fieldset>
+        <button class="cssbuttons-io-button" type="submit" value="Register">
+            Register
+            <div class="icon">
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </button>
+          
+        <button class="button" type="reset" value="Reset">
+            <svg class="svg-icon" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><g stroke="#ff342b" stroke-linecap="round" stroke-width="1.5"><path d="m3.33337 10.8333c0 3.6819 2.98477 6.6667 6.66663 6.6667 3.682 0 6.6667-2.9848 6.6667-6.6667 0-3.68188-2.9847-6.66664-6.6667-6.66664-1.29938 0-2.51191.37174-3.5371 1.01468"></path><path d="m7.69867 1.58163-1.44987 3.28435c-.18587.42104.00478.91303.42582 1.0989l3.28438 1.44986"></path></g></svg>
+            <span class="lable">Repeat</span>
+          </button>
+    </form>
+
+    <!-- Acknowledgment Screen -->
+    <div id="acknowledgmentScreen" style="display: none;">
+        <h2>Registration Acknowledgment</h2>
+        <p id="ackMessage"></p>
+        <p id="ackUsername"></p>
+        <p id="ackName"></p>
+        <p id="ackEmail"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
